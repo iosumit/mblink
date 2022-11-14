@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    background-color: cornsilk;
+}
+
+h1 {
+    font-family: 'Sofia';
+}
+
+.headerlogo {
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+input[type="color"] {
+    border: bisque 1px solid;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 4px;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: bisque 1px solid;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.savebtn {
+    padding: 8px 16px;
+}
+
+input[type=text] {
+    padding: 8px 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    letter-spacing: 2px;
+}
+
+#connected-status {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.status {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    border: 1px solid #73AD21;
+    border-radius: 8px;
+}
